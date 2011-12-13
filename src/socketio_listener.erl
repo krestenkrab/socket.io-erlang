@@ -2,7 +2,7 @@
 -behaviour(gen_server).
 
 -ifdef(COMPILING_WITH_REBAR_AND_ERLC_HATES_DEPS).
--include_lib("ex_uri.hrl").
+-include_lib("ex_uri/include/ex_uri.hrl").
 -else.
 -include_lib("ex_uri/deps/ex_uri.hrl").
 -endif.
